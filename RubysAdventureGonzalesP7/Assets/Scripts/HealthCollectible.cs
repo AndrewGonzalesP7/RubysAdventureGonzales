@@ -9,7 +9,7 @@ public class HealthCollectible : MonoBehaviour
         RubysController controller = other.GetComponent<RubysController>(); 
         if (controller != null)
         {
-            Debug.Log("Object that entered the trigger : " + other);
+           
           if (controller.health < controller.maxHealth)
             {
                 controller.ChangeHealth(1);
